@@ -3,10 +3,10 @@
 A set of scripts to automate resizing and markup for modern web app icons
 
 # Overview
-apple-icon-resize.js - creates thumbnail images for apple devices
-apple-icons.js - prints HTML headers for apple devices to standard output
-manifest-icon-resize.js - creates thumbnail images for web manifest
-manifest-icons.js - prints JSON for web manifest to standard output
+- apple-icon-resize.js - creates thumbnail images for apple devices
+- apple-icons.js - prints HTML headers for apple devices to standard output
+- manifest-icon-resize.js - creates thumbnail images for web manifest
+- manifest-icons.js - prints JSON for web manifest to standard output
 
 # Installation
 
