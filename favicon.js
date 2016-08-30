@@ -1,7 +1,6 @@
 const spawn = require('child_process').spawn
 
 function resize(file) {
-	console.log(file)
 	spawn('convert', [
 		file,
 		'-alpha',
@@ -17,8 +16,6 @@ function resize(file) {
 if (module === require.main) {
   const argv = require('minimist')(process.argv.slice(2))
   const inputFile = argv.input || argv.i
-	console.log(inputFile)
-	console.log(argv)
   resize(inputFile)
 }
 
