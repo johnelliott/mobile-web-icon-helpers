@@ -1,12 +1,13 @@
 {
-  "name": "icon-headers",
+  "name": "mobile-web-icons",
   "version": "1.0.0",
-  "description": "",
+  "description": "Resize and generate markup for mobile web app icons",
   "main": "template.js",
+  "repository": "https://github.com/johnelliott/mobile-web-icon-helpers.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
-  "keywords": [],
+  "keywords": ["icon", "image", "web"],
   "author": "John Elliott <johnelliott703@gmail.com>",
   "license": "MIT",
   "devDependencies": {
