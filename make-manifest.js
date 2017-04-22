@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* Sample output:
   "icons": [
     {

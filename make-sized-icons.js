@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const spawn = require('child_process').spawn
 
 function resize(file, sizes) {
