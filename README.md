@@ -3,10 +3,10 @@
 A set of scripts to automate resizing and markup for modern web app icons
 
 # Overview
-- apple-icon-resize.js - creates thumbnail images for apple devices
-- apple-icons.js - prints HTML headers for apple devices to standard output
-- manifest-icon-resize.js - creates thumbnail images for web manifest
-- manifest-icons.js - prints JSON for web manifest to standard output
+- make-apple-sized-icons.js - creates thumbnail images for apple devices
+- make-apple-icon-html-headers.js - prints HTML headers for apple devices to standard output
+- make-sized-icons.js - creates thumbnail images for web manifest
+- make-manifest.js - prints JSON for web manifest to standard output
 
 # Installation
 
@@ -17,24 +17,24 @@ Not much work done here. This could improve with a global npm installation and u
 
 
 # Use
-Write web manifest JSON to `manifest-icons.json` for 144px, 192px, 256px, 384px, 512px thumbnails:
+Write web manifest JSON to `make-manifest.json` for 144px, 192px, 256px, 384px, 512px thumbnails:
 ```bash
-node manifest-icons.js -i base.png 144 192 256 384 512 > manifest-icons.json
+node make-manifest.js -i base.png 144 192 256 384 512 > make-manifest.json
 ```
 
 Create 144px, 192px, 256px, 384px, 512px thumbnails in PNG format:
 ```bash
-node manifest-icon-resize.js -i base.png 144 192 256 384 512
+node make-sized-icons.js -i base.png 144 192 256 384 512
 ```
 
 Create thumbnails for Apple devices (four sizes):
 ```bash
-node apple-icon-resize.js -i base.png
+node make-apple-sized-icons.js -i base.png
 ```
 
 Write html <link> tags to `apple-header.snippet.html` for Apple devices:
 ```bash
-node apple-icons.js -i base.png > apple-header.snippet.html
+node make-apple-icon-html-headers.js -i base.png > apple-header.snippet.html
 ```
 
 Create a `favicon.ico` file with 32px and 16px sizes:
