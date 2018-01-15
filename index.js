@@ -13,7 +13,7 @@ const path = require('path')
   <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 */
 
-const sizes = [180, 167, 160, 152, 80, 512, 192, 384, 144, 192]
+const sizes = [180, 167, 160, 152, 120, 80, 512, 192, 384, 144, 192]
 function appleTouchIconName (size) {
   return `apple-touch-icon-${size}x${size}.png`
 }
